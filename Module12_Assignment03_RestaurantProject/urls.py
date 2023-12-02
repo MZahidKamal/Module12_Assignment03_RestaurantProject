@@ -21,4 +21,6 @@ from .views import base
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('base/', base),
+    path('', include('meal_app.urls')),
+    path('', include('about_us_app.urls')),
 ]
