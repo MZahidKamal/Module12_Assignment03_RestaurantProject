@@ -2,5 +2,34 @@
 {% load static %}
 
 {% block page_independent_content %}
-	<h1>This is meals page.</h1>
+	<br><br>
+
+	<div class="container">
+
+		<!-- Meal -->
+		<div class="container">
+			<ul class="list-unstyled d-flex flex-wrap justify-content-start">
+
+				<!-- Cards -->
+				{% for each in categories %}
+					<li class="col-lg-3 col-md-4 col-sm-6 mb-3">
+						<div class="card" style="width: 18rem;">
+							<img src="{{ each.strCategoryThumb }}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">{{ each.strCategory }}</h5>
+								<p class="card-text">(Id:{{ each.idCategory }})</p>
+								<p class="card-text">{{ each.strCategoryDescription | truncatewords:10 }}</p>
+							</div>
+						</div>
+					</li>
+				{% endfor %}
+
+			</ul>
+		</div>
+
+
+
+	</div>
+
+	<br><br>
 {% endblock %}
