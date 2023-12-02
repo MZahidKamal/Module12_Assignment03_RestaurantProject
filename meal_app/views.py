@@ -47,6 +47,10 @@ meals_data = {
 }
 
 
+
 def meals(request):
     context = meals_data
     return render(request, 'meal_app/meals.html', context)
+
+# def item(request, id):
+#     return render(request, 'meal_app/item.html', {'id': id})

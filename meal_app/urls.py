@@ -5,4 +5,5 @@ urlpatterns = [
     path('', home, name='home'),
     path('home/', home, name='home'),
     path('menu/', meals, name='menu'),
+    path('menu/', meals, name='menu'),
 ]

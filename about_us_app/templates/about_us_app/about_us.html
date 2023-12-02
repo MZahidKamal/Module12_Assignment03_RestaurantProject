@@ -2,5 +2,18 @@
 {% load static %}
 
 {% block page_independent_content %}
-	<h1>This is about us page.</h1>
+	<br><h1>About Us</h1><br>
+	<div class="container">
+		<!-- Content here -->
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<img src="{% static 'about_us_app/images/about.jpg' %}" class="img-fluid" alt="...">
+				</div>
+				<div class="col">
+					<p>Welcome to <strong><em><span style="color: rgb(184, 49, 47);">Salwaa Dining Restaurant</span></em></strong>! Established with a passion for culinary excellence and a commitment to delivering an exceptional dining experience. Our story begins with a love for crafting delectable dishes using only the freshest ingredients sourced locally. At&nbsp;<strong><em><span style="color: rgb(184, 49, 47);">Salwaa Dining Restaurant</span></em></strong>, we aim to delight our patrons with a fusion of flavors and unique culinary creations.<br><br>Our journey started with a simple idea: to create a space where food enthusiasts, families, and friends can savor remarkable dishes in a warm and inviting ambiance. Our team of dedicated chefs brings together expertise and creativity, ensuring each plate leaving our kitchen is a masterpiece.<br><br>Driven by a commitment to quality, we pride ourselves on providing not just a meal but an unforgettable dining adventure. From farm-to-table ingredients to impeccable service, every aspect of our restaurant reflects our dedication to your satisfaction.<br><br>Join us at <strong><em><span style="color: rgb(184, 49, 47);">Salwaa Dining Restaurant</span></em></strong>, where every bite tells a story, and each visit promises an experience to cherish. Thank you for being part of our culinary journey!</p>
+				</div>
+			</div>
+		</div>
+	</div><br>
 {% endblock %}
